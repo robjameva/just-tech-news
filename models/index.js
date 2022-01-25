@@ -3,6 +3,7 @@ const Post = require('./Post');
 const Vote = require('./Vote');
 const Comment = require('./Comment');
 
+
 // Associations
 // User -> Post
 User.hasMany(Post, {
