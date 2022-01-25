@@ -1,7 +1,7 @@
-const User = require('./User_test');
-const Post = require('./Post_test');
-const Vote = require('./Vote_test');
-const Comment = require('./Comment_test');
+const User = require('./User_model');
+const Post = require('./Post_model');
+const Vote = require('./Vote_model');
+const Comment = require('./Comment_model');
 
 
 // Associations
