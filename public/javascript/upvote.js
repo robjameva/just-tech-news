@@ -16,7 +16,6 @@ async function upvoteClickHandler(event) {
     });
 
     if (response.ok) {
-        console.log('ROBERT EVANIK')
         document.location.reload();
     } else {
         alert(response.statusText);

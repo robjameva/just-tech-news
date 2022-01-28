@@ -30,12 +30,12 @@ app.set('view engine', 'handlebars');
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(session(sess));
 
+app.use(session(sess));
 // turn on routes
 app.use(routes);
 
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => console.log(`Now listening on PORT: ${PORT}`));
+    app.listen(PORT, () => console.log('Now listening'));
 });
